@@ -16,6 +16,8 @@ import static javax.persistence.GenerationType.IDENTITY;
 @NoArgsConstructor
 @Entity
 @Table(name = "token")
+
+//whenever user registered token is generated it is part of activation
 public class VerificationToken {
 
     @Id
