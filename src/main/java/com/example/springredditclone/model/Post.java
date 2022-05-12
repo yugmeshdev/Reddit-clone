@@ -16,7 +16,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 
 @Data
 @Entity
-@Builder //build objects
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Post {
@@ -30,7 +30,7 @@ public class Post {
     @Nullable
     @Lob
     private String description;
-    private Integer voteCount ;
+    private Integer voteCount = 0;
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;

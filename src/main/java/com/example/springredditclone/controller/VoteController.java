@@ -13,7 +13,7 @@ import com.example.springredditclone.service.VoteService;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/votes")
 @AllArgsConstructor
 public class VoteController {
 	private final VoteService voteService;
